@@ -23,7 +23,7 @@ class PartialConv2d(nn.Conv2d):
                  return_mask=False,
                  **kwargs):
 
-        super(PartialConv2d, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
         # whether the mask is multi-channel or not
         self.multi_channel = multi_channel
